@@ -1,0 +1,6 @@
+{
+  "name": "KASWAH FAST FOODS",
+  "description": "Crispy Flavor, Delivered Fast. Order hot & crunchy fried chicken, gourmet burgers, wraps, sides, and family bundles with real-time tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
