@@ -35,7 +35,8 @@ export const AdminSidebar: React.FC<AdminSidebarProps> = ({
     logoutAdmin,
     setCurrentView,
     activeOrdersCount,
-    unreadAdminCount
+    unreadAdminCount,
+    settings
   } = useApp();
 
   const menuItems = [
@@ -79,7 +80,9 @@ export const AdminSidebar: React.FC<AdminSidebarProps> = ({
                 <Flame className="w-5 h-5" />
               </div>
               <div>
-                <div className="font-black text-base text-white font-['Outfit']">KASWAH</div>
+                <div className="font-black text-base text-white font-['Outfit'] truncate max-w-[140px]">
+                  {settings.name || 'RAJOWAL CRICKET'}
+                </div>
                 <div className="text-[10px] font-bold text-[#84cc16] uppercase tracking-wider">
                   Admin Command
                 </div>

@@ -174,7 +174,7 @@ export const AdminOverview: React.FC<AdminOverviewProps> = ({
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
           <div>
             <h3 className="text-lg font-bold text-white font-['Outfit']">Weekly Sales Performance</h3>
-            <p className="text-xs text-gray-400">Daily revenue across Kaswah Fast Foods</p>
+            <p className="text-xs text-gray-400">Daily revenue across {settings.name}</p>
           </div>
           <div className="flex items-center gap-4 text-xs">
             <div className="flex items-center gap-1.5 text-gray-300">

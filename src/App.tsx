@@ -127,7 +127,7 @@ const MainApp: React.FC = () => {
                   <div>
                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#ff6b00]/15 border border-[#ff6b00]/30 text-[#ff6b00] text-xs font-bold uppercase tracking-wider mb-2">
                       <Flame className="w-3.5 h-3.5" />
-                      <span>All Kaswah Craveables</span>
+                      <span>All {settings.name} Craveables</span>
                     </div>
                     <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight font-['Outfit']">
                       Full Menu Selection
@@ -180,7 +180,7 @@ const MainApp: React.FC = () => {
                 {loading ? (
                   <div className="py-24 text-center text-gray-500">
                     <div className="w-10 h-10 border-2 border-[#ff6b00] border-t-transparent rounded-full animate-spin mx-auto mb-3"></div>
-                    <p className="text-sm">Loading Kaswah Crispy Specials...</p>
+                    <p className="text-sm">Loading {settings.name} Specials...</p>
                   </div>
                 ) : filteredProducts.length === 0 ? (
                   <div className="py-16 text-center bg-[#11131c] border border-[#202334] rounded-3xl p-8 max-w-lg mx-auto">
@@ -205,7 +205,7 @@ const MainApp: React.FC = () => {
                 )}
               </section>
 
-              {/* Why Choose Kaswah Feature Cards */}
+              {/* Why Choose Feature Cards */}
               <section className="pt-6">
                 <div className="bg-gradient-to-r from-[#141624] via-[#11131d] to-[#0e1017] border border-[#23273b] rounded-3xl p-6 sm:p-10 relative overflow-hidden shadow-2xl">
                   <div className="absolute top-0 right-0 w-80 h-80 bg-[#ff6b00]/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -213,10 +213,10 @@ const MainApp: React.FC = () => {
                   <div className="text-center max-w-2xl mx-auto mb-8 space-y-2">
                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#84cc16]/15 text-[#84cc16] text-xs font-bold uppercase tracking-wider">
                       <Award className="w-3.5 h-3.5" />
-                      <span>The Kaswah Promise</span>
+                      <span>The {settings.name} Promise</span>
                     </div>
                     <h3 className="text-xl sm:text-3xl font-black text-white font-['Outfit']">
-                      Why Food Lovers Choose Kaswah
+                      Why Food Lovers Choose {settings.name}
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-400">
                       We take fried chicken seriously. From antibiotic-free chicken sourcing to our proprietary 11-spice marinade, crunch is guaranteed.
@@ -267,7 +267,7 @@ const MainApp: React.FC = () => {
             <div className="border-b border-[#1f2231] pb-6 flex flex-col md:flex-row md:items-end justify-between gap-4">
               <div>
                 <h1 className="text-3xl sm:text-4xl font-black text-white font-['Outfit']">
-                  Kaswah Fast Foods Menu
+                  {settings.name} Menu
                 </h1>
                 <p className="text-xs sm:text-sm text-gray-400 mt-1">
                   Hand-crafted chicken meals, juicy smash burgers, and delicious sides.

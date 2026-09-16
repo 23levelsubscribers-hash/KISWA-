@@ -8,7 +8,8 @@ export const AdminLoginModal: React.FC = () => {
     setIsAdminLoginOpen,
     loginAdmin,
     setCurrentView,
-    showToast
+    showToast,
+    settings
   } = useApp();
 
   const [email, setEmail] = useState('admin@kaswah.com');
@@ -26,7 +27,7 @@ export const AdminLoginModal: React.FC = () => {
     if (success) {
       setIsAdminLoginOpen(false);
       setCurrentView('admin');
-      showToast('Welcome to Kaswah Admin Management Portal', 'success');
+      showToast(`Welcome to ${settings.name} Admin Portal`, 'success');
     } else {
       showToast('Invalid admin credentials. Try admin@kaswah.com / admin123', 'error');
     }
@@ -54,7 +55,7 @@ export const AdminLoginModal: React.FC = () => {
             Admin Portal Access
           </h2>
           <p className="text-xs text-gray-400 mt-1">
-            Kaswah Fast Foods Central Kitchen & Restaurant Management
+            {settings.name} Operations & Management Portal
           </p>
         </div>
 

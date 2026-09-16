@@ -329,7 +329,7 @@ export const AdminProducts: React.FC<AdminProductsProps> = ({
                     required
                     value={editingProduct.name}
                     onChange={e => setEditingProduct({ ...editingProduct, name: e.target.value })}
-                    placeholder="e.g. Kaswah Crispy Drumsticks"
+                    placeholder="e.g. Rajowal Crispy Drumsticks"
                     className="w-full bg-[#181a28] border border-[#272a3c] rounded-xl px-3 py-2 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-[#ff6b00]"
                   />
                 </div>

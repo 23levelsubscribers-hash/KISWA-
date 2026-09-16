@@ -21,7 +21,7 @@ export class ErrorBoundary extends Component<Props, State> {
   }
 
   public override componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-    console.error('Uncaught error in Kaswah App:', error, errorInfo);
+    console.error('Uncaught error in Rajowal Cricket App:', error, errorInfo);
   }
 
   private handleReset = () => {

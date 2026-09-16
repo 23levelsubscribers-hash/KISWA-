@@ -23,7 +23,7 @@ const STAGES: { status: OrderStatus; label: string; icon: any; description: stri
   { status: 'Preparing', label: 'Preparing', icon: ChefHat, description: 'Frying & cooking fresh crispy chicken' },
   { status: 'Ready', label: 'Ready', icon: PackageCheck, description: 'Packed hot in insulated thermal bags' },
   { status: 'Out for Delivery', label: 'Out for Delivery', icon: Bike, description: 'Rider is on the way to your address' },
-  { status: 'Delivered', label: 'Delivered', icon: Smile, description: 'Enjoy your hot & crunchy Kaswah feast!' }
+  { status: 'Delivered', label: 'Delivered', icon: Smile, description: 'Enjoy your hot & crunchy feast!' }
 ];
 
 export const OrderTrackingView: React.FC = () => {

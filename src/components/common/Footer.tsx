@@ -25,7 +25,12 @@ export const Footer: React.FC = () => {
                 <Flame className="w-6 h-6" />
               </div>
               <div className="font-extrabold text-xl tracking-tight text-white font-['Outfit']">
-                KASWAH <span className="text-[#ff6b00]">FAST FOODS</span>
+                {settings.name ? settings.name.split(' ')[0] : 'RAJOWAL'}{' '}
+                <span className="text-[#ff6b00]">
+                  {settings.name && settings.name.split(' ').length > 1
+                    ? settings.name.split(' ').slice(1).join(' ')
+                    : 'CRICKET'}
+                </span>
               </div>
             </div>
             <p className="text-sm leading-relaxed text-gray-400 mb-5">

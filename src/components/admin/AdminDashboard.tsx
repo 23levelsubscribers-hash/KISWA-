@@ -15,7 +15,7 @@ import { AdminSettings } from './AdminSettings';
 import { ShieldAlert, LogIn, ArrowLeft } from 'lucide-react';
 
 export const AdminDashboard: React.FC = () => {
-  const { adminUser, setIsAdminLoginModalOpen, setCurrentView } = useApp();
+  const { adminUser, setIsAdminLoginModalOpen, setCurrentView, settings } = useApp();
 
   const [currentTab, setCurrentTab] = useState<string>('overview');
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
@@ -39,7 +39,7 @@ export const AdminDashboard: React.FC = () => {
               Staff Portal Protected
             </h2>
             <p className="text-xs text-gray-400 mt-1">
-              Access to Kaswah Fast Foods Admin & Kitchen terminal requires authorized credentials.
+              Access to {settings.name} Admin & Operations terminal requires authorized credentials.
             </p>
           </div>
 

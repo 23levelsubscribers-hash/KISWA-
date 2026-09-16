@@ -27,7 +27,8 @@ export const AdminTopNav: React.FC<AdminTopNavProps> = ({
     unreadAdminCount,
     markNotificationAsRead,
     markAllNotificationsAsRead,
-    setCurrentView
+    setCurrentView,
+    settings
   } = useApp();
 
   const [soundEnabled, setSoundEnabled] = useState(true);
@@ -62,7 +63,7 @@ export const AdminTopNav: React.FC<AdminTopNavProps> = ({
             {tabTitles[currentTab] || 'Management Portal'}
           </h1>
           <p className="text-[11px] text-gray-400 hidden sm:block">
-            Kaswah Fast Foods Central Kitchen & Operations
+            {settings.name} Operations & Management
           </p>
         </div>
       </div>

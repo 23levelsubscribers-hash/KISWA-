@@ -365,7 +365,7 @@ export const CheckoutModal: React.FC = () => {
                     <Building2 className="w-5 h-5 text-amber-400" />
                     <div>
                       <div className="font-bold text-sm text-white">Bank Transfer / Raast / EasyPaisa / JazzCash</div>
-                      <div className="text-xs text-gray-400">Kaswah Account: Meezan Bank (0201-0104928192)</div>
+                      <div className="text-xs text-gray-400">{settings.name} Account: Meezan Bank (0201-0104928192)</div>
                     </div>
                   </div>
                 </label>
@@ -478,7 +478,7 @@ export const CheckoutModal: React.FC = () => {
               {/* Security note */}
               <div className="flex items-center gap-2 text-[11px] text-gray-400 bg-[#171a26] p-2.5 rounded-xl border border-[#23273a] mb-5">
                 <ShieldCheck className="w-4 h-4 text-[#84cc16] shrink-0" />
-                <span>Kaswah Fresh Guarantee: Hot upon arrival or free replacement.</span>
+                <span>{settings.name} Fresh Guarantee: Hot upon arrival or free replacement.</span>
               </div>
 
               {/* Place Order CTA */}

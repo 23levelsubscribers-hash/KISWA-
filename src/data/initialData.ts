@@ -12,7 +12,7 @@ import {
 } from '../types';
 
 export const INITIAL_SETTINGS: RestaurantSettings = {
-  name: 'KASWAH FAST FOODS',
+  name: 'RAJOWAL CRICKET',
   tagline: 'Crispy Flavor, Delivered Fast. Hot, crunchy & made fresh for you.',
   logo: 'https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=200&auto=format&fit=crop&q=80',
   phone: '+92 300 1234567',

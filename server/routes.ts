@@ -8,7 +8,7 @@ apiRouter.use(express.json());
 
 // Health Check
 apiRouter.get('/health', (req: Request, res: Response) => {
-  res.json({ status: 'ok', timestamp: new Date().toISOString(), app: 'KASWAH FAST FOODS API' });
+  res.json({ status: 'ok', timestamp: new Date().toISOString(), app: 'RAJOWAL CRICKET API' });
 });
 
 // Authentication

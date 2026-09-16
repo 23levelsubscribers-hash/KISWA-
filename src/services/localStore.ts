@@ -52,7 +52,12 @@ function setItem<T>(key: string, value: T): void {
 
 export const localStore = {
   getSettings: (): RestaurantSettings => {
-    return getItem<RestaurantSettings>(STORAGE_KEYS.SETTINGS, INITIAL_SETTINGS);
+    const s = getItem<RestaurantSettings>(STORAGE_KEYS.SETTINGS, INITIAL_SETTINGS);
+    if (!s.name || s.name === 'KASWAH FAST FOODS') {
+      s.name = 'RAJOWAL CRICKET';
+      setItem(STORAGE_KEYS.SETTINGS, s);
+    }
+    return s;
   },
   updateSettings: (updates: Partial<RestaurantSettings>): RestaurantSettings => {
     const current = localStore.getSettings();
@@ -318,7 +323,7 @@ export const localStore = {
     let notes = getItem<AppNotification[]>(STORAGE_KEYS.NOTIFICATIONS, [
       {
         id: 'notif-1',
-        title: 'Welcome to Kaswah Fast Foods!',
+        title: 'Welcome to RAJOWAL CRICKET!',
         message: 'Get 20% off on your first order using code CRISPY20',
         target: 'customer',
         type: 'promo',

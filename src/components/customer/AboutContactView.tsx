@@ -49,10 +49,10 @@ export const AboutContactView: React.FC = () => {
               The Legend of <span className="text-[#ff6b00]">Golden Crunch</span>
             </h1>
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-              Founded in Lahore, Pakistan, <strong className="text-white">KASWAH FAST FOODS</strong> was established with a singular mission: to redefine the fast-food fried chicken experience by combining authentic culinary craftsmanship with uncompromising freshness.
+              Founded in Lahore, Pakistan, <strong className="text-white">{settings.name}</strong> was established with a singular mission: to redefine the fast-food experience by combining authentic culinary craftsmanship with uncompromising freshness.
             </p>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Unlike industrial fast food chains that rely on frozen patties and pre-fried pieces, every single cut at Kaswah is 100% prime fresh grain-fed chicken, marinated for 12 hours in our secret blend of 11 spices, hand-breaded on demand, and fried in pure trans-fat free oil for that signature crunch outside and juicy tenderness inside.
+              Unlike industrial chains that rely on frozen patties and pre-fried pieces, every single item at {settings.name} is made with 100% prime fresh ingredients, marinated to perfection in our secret blend of 11 spices, prepared on demand, and fried in pure trans-fat free oil for that signature crunch outside and juicy tenderness inside.
             </p>
 
             {/* Quality Pillars */}
@@ -79,7 +79,7 @@ export const AboutContactView: React.FC = () => {
             <div className="rounded-3xl overflow-hidden border-2 border-[#2b2f42] shadow-2xl">
               <img
                 src="https://images.unsplash.com/photo-1513639776629-7b61b0ac49cb?w=800&auto=format&fit=crop&q=80"
-                alt="Kaswah Fresh Fried Chicken Kitchen"
+                alt="Rajowal Kitchen"
                 referrerPolicy="no-referrer"
                 className="w-full h-80 sm:h-96 object-cover"
               />
@@ -155,7 +155,7 @@ export const AboutContactView: React.FC = () => {
             {/* WhatsApp Quick CTA */}
             <div className="mt-8 pt-6 border-t border-[#1f2231]">
               <a
-                href={`https://wa.me/${settings.whatsapp.replace(/[^0-9]/g, '')}?text=Hi%20Kaswah%20Fast%20Foods,%20I%20would%20like%20to%20place%20an%20order!`}
+                href={`https://wa.me/${settings.whatsapp.replace(/[^0-9]/g, '')}?text=Hi%20${encodeURIComponent(settings.name)},%20I%20would%20like%20to%20place%20an%20order!`}
                 target="_blank"
                 rel="noreferrer"
                 className="w-full py-3.5 px-4 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/20 transition"
@@ -182,7 +182,7 @@ export const AboutContactView: React.FC = () => {
                 <CheckCircle2 className="w-12 h-12 text-[#84cc16] mx-auto" />
                 <h4 className="text-lg font-bold text-white">Message Received!</h4>
                 <p className="text-xs text-gray-300 max-w-sm mx-auto">
-                  Thank you for reaching out to Kaswah Fast Foods. Our guest relations manager will review your message promptly.
+                  Thank you for reaching out to {settings.name}. Our guest relations manager will review your message promptly.
                 </p>
                 <button
                   type="button"

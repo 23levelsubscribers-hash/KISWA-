@@ -190,14 +190,16 @@ export const Header: React.FC = () => {
           <div className="hidden sm:block text-left">
             <div className="flex items-center gap-1.5">
               <span className="font-extrabold text-xl tracking-tight text-white font-['Outfit']">
-                KASWAH
+                {settings.name ? settings.name.split(' ')[0] : 'RAJOWAL'}
               </span>
-              <span className="text-[10px] font-black tracking-wider bg-[#a3e635] text-black px-1.5 py-0.5 rounded uppercase">
-                FAST FOODS
-              </span>
+              {settings.name && settings.name.split(' ').length > 1 && (
+                <span className="text-[10px] font-black tracking-wider bg-[#a3e635] text-black px-1.5 py-0.5 rounded uppercase">
+                  {settings.name.split(' ').slice(1).join(' ')}
+                </span>
+              )}
             </div>
             <p className="text-[9px] text-gray-400 font-semibold tracking-wider uppercase">
-              Crispy Flavor • Delivered Fast
+              {settings.tagline || 'Crispy Flavor • Delivered Fast'}
             </p>
           </div>
         </div>

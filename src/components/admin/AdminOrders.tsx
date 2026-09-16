@@ -509,7 +509,7 @@ export const AdminOrders: React.FC<AdminOrdersProps> = ({
             </button>
 
             <div className="text-center pb-3 border-b-2 border-dashed border-black">
-              <h2 className="text-lg font-black tracking-tighter">KASWAH FAST FOODS</h2>
+              <h2 className="text-lg font-black tracking-tighter">{settings.name}</h2>
               <p className="text-[10px]">{settings.address}, {settings.city}</p>
               <p className="text-[10px]">Ph: {settings.phone}</p>
               <p className="text-[10px] mt-1 font-bold">KITCHEN TICKET / TAX RECEIPT</p>
@@ -545,7 +545,7 @@ export const AdminOrders: React.FC<AdminOrdersProps> = ({
             </div>
 
             <div className="text-center pt-3 text-[10px] text-gray-600">
-              <p>Thank you for choosing Kaswah!</p>
+              <p>Thank you for choosing {settings.name}!</p>
               <p>Hot, crunchy & made fresh for you.</p>
             </div>
 
